@@ -2,21 +2,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Interactive quiz</title>
+	<title>Covid-19 Quiz</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<!--Title Section-->
-	<div class="intro pt-5 bg-white text-center my-0"> 
+	<div class="intro pt-5 text-center my-0"> 
 		<div class="container"> <!--Title-->
-			<h2 class="text-dark display-3 font-weight-bold">Sample-Quiz</h2> 
+			<h2 class="text-light display-3 font-weight-bold">Symptom Matcher for Covid-19</h2> 
 		</div>
 	</div>
 
 	<!--Error Section-->
 	<div class="errorBlock w-70 m-5 rounded shadow bg-danger text-center my-0 d-none">
 		<div class="container lead">
-			<p class="text-white h3 p-4">Error :( At least one option is unchecked</p>
+			<p class="text-white h3 p-4">Error :( At least one option is unchecked, Please reload the page and check all options</p>
 		</div>
 	</div>
 
@@ -27,9 +28,16 @@
 		</div>
 	</div>
 
+	<!--Next-Section-->
+	<div class="next w-70 m-5 rounded text-center my-0 d-none">
+		<div class="container">
+			<button type="button" class="btn btn-primary mx-auto"><a href="./nextsteps.html">Next Steps</a></button>
+		</div>
+	</div>
+
 	<!--Quiz Section-->
 	<div class="quiz w-70 m-5 shadow bg-white rounded my-0">
-		<div class="container pb-3"> <!--Container-->
+		<div id="mainsection" class="container pb-3 text-center"> <!--Container-->
 			<!--Heading-->
 			<h2 class="text-dark pt-5 mb-0 pb-0">On with the questions!</h2>
 			<!--Questions-->
@@ -46,52 +54,52 @@
 						<!--Option 2-->
 							<div class="form-check my-2 text-dark-50">
 								<input type="radio" name="q1" value="B">
-								<label class="form-check-label pb-2">No/label>
+								<label class="form-check-label pb-2">No</label>
 							</div>
 					</div>
 				<!--Second Question-->
 					<div class="mb-3 mt-2">
 						<!--Title Text for Second Question-->
-							<p class="lead font-weight-normal mt-0">2. Sample Question 2</p>
+							<p class="lead font-weight-normal mt-0">2. Are you experiencing a dry cough</p>
 						<!--Option 1-->
 							<div class="form-check my-2 text-dark-50">
 								<input type="radio" name="q2" value="A">
-								<label class="form-check-label">Option A</label>
+								<label class="form-check-label">Yes</label>
 							</div>
 						<!--Option 2-->
 							<div class="form-check my-2 text-dark-50">
 								<input type="radio" name="q2" value="B">
-								<label class="form-check-label pb-2">Option B</label>
+								<label class="form-check-label pb-2">No</label>
 							</div>
 					</div>
 				<!--Third Question-->
 					<div class="mb-3 mt-2">
 						<!--Title Text for Third Question-->
-						<p class="lead font-weight-normal mt-0">3. Sample Question 3</p>
+						<p class="lead font-weight-normal mt-0">3. Are you often tired?</p>
 						<!--Radio Buttons-->
 						<div class="form-check my-2 text-dark-50">
 							<input type="radio" name="q3" value="A">
-							<label class="form-check-label">Option A</label>
+							<label class="form-check-label">Yes</label>
 						</div>
 						<!--Option 2-->
 						<div class="form-check my-2 text-dark-50">
 							<input type="radio" name="q3" value="B">
-							<label class="form-check-label pb-2">Option B</label>
+							<label class="form-check-label pb-2">No</label>
 						</div>
 					</div>
 				<!--Fourth Question-->
 					<div class="mb-3 mt-2">
 						<!--Title Text for Fourth Question-->
-							<p class="lead font-weight-normal mt-0">4. Sample Question 4</p>
+							<p class="lead font-weight-normal mt-0">4. (Less Common) Do you have a dry cough?</p>
 						<!--Option 1-->
 							<div class="form-check my-2 text-dark-50">
 								<input type="radio" name="q4" value="A">
-								<label class="form-check-label">Option A</label>
+								<label class="form-check-label">Yes</label>
 							</div>
 						<!--Option 2-->
 							<div class="form-check my-2 text-dark-50">
 								<input type="radio" name="q4" value="B">
-								<label class="form-check-label pb-2">Option B</label>
+								<label class="form-check-label pb-2">No</label>
 							</div>
 					</div>
 				<!--Submit Button-->
